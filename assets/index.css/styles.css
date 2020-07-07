@@ -1,0 +1,233 @@
+/*
+global styles
+CSS rule : selector {property
+*/
+
+:root {
+    --title-color: rgb(99, 6, 6);
+    --main-font-size: 2em;
+    --main-color: black;
+    /**
+    *   Couleurs Bootstrap
+    **/
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b4;
+    --dark: rgb(70, 63, 63);
+    --light: #ffffff;
+}
+
+body {
+
+    background-image: url("/img/chat.jpeg");
+    background-size: cover;     
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1em; /* em correspond à l'unité de reference du navigateur 16px*/
+}
+
+header h1 p {
+    range: url("/img/csshtml.jpg");
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+nav ul li {
+    
+    list-style-type: none;
+}
+
+
+nav {
+    color: var(--light);
+}
+
+
+/*le caratere espace designe les enfants.*/
+nav ul li a {
+    
+    transform: rotate(0deg);
+    text-decoration: none ;
+    color: inherit;
+    
+}
+/*etat initial de l'element*/
+nav ul li a.btn {
+    transition: all 0.6s 0.2s ease-in, transform 0.4s 0.4s linear, background-color 0.8s 0.7s ease-out;
+    /*defini comment passer a l'etat final*/
+}
+
+
+
+/*
+nav{
+    &.bg-dark{
+
+    }
+    ul{
+        li{
+            a{
+                &.btn{
+
+                }
+            }
+        }
+    }
+}
+*/
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+nav ul li a.btn:hover {/*etat final c'est ici*/
+    color: var(--dark);
+    background-color: var(--light);
+    transform: rotate(360deg);
+}
+
+/* la virgule veut dire ET */
+h1,h2 {
+    margin: 0px;
+    padding: 0px; /*reset user agent steelsheet*/
+    color: rgb(12, 6, 99);
+}
+
+
+
+abbr {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h3 {
+    color: red;
+    background-color: black;
+    display: inline-block;
+}
+
+/** selecteur de classes**/
+
+.dropdown {
+    color: var( --info);
+}
+
+.btn {
+    display: inline-block;
+    border: solid 1px var(--success);
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 1em ;
+    padding-bottom: 1em ;
+}
+
+.bg-light {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.shadowed {
+    box-shadow: var(--shadowed);
+}
+
+.content-box { 
+    box-sizing: content-box;
+}
+
+em {
+    color: blue;
+    background-color: black;
+    display: inline-block;
+}
+
+
+
+/*let htmlSection = document.getElementById('section-html') sert en java à aller recupérer un id
+défini dans un html*/
+
+/*selecteur sur un id d'element : #nom_id*/
+
+section {
+    height: 55vh;
+    display: inline-block;
+}
+
+#section-html {
+    background-color: rgba(23, 162, 180, 1) ;
+}
+
+#section-css {
+    background-color: rgba(255, 193, 7, 1);
+    
+}
+
+#section-html2 {
+    
+    background-color: rgba(255, 255, 255, 1);
+
+}
+section#section-html2 h2 {
+    color: var(--title-color)
+}
+
+footer ul li a {
+    text-decoration: none ;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+#footera {
+    background-color: var(--dark);
+}
+
+footer ul li {
+    color: var(--light);
+}
+
+span[class^="icon-"] {
+    margin-right: 0.3em;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+#menu-vertical, #menu-vertical ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    width: 180px; /* seule ligne rajoutée */
+  }
+
+  #menu-vertical li {
+    position: relative;
+    background:#f0efef; /* juste pour cacher le texte de la page en-dessous */
+  }
+
+  #menu-vertical a {
+    display:block;
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+  }
+
+  #menu-vertical ul {
+    position: absolute;
+    left:-999em;
+  }
+
+  #menu-vertical li:hover ul {
+    top: 0;
+    left: 180px;
+  }
+

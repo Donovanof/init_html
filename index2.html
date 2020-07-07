@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+
+<!--element head : instructions envoyées au navigateur-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Découvrir le html</title>
+    <!--title :elemnet affiché dans
+            l'onglet du navigateur-->
+    <link href="./assets/index.css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/index.css/style.css">
+</head>
+
+<body>
+
+    <!--element body : contenu visible dans la page html-->
+    <header>
+        <span class="textcenter">
+        <h1>Découvrir le html</h1>
+        <p>
+            L'histoire du
+            <!--
+                            abbr avec l'attribut title pour donner la signification
+                            de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language)
+                        -->
+            <abbr title="hyper text markup language">
+                html
+            </abbr>
+            à travers les âges.
+        </p>
+    </span>
+    </header>
+    <nav class="bg-dark">
+        <!--element qui regroupe des balises de navigation-->
+        <ul class="flex-container">
+            <!--conteneur de liste-->
+            <li>
+                <a class="btn bg-dark shadowed" href="index.html" target="new" title="Lien vers l'accueil">
+                    <span class="icon-home3"></span>ACCUEIL
+                </a>
+            </li>
+            <li>
+                <!--lien interne-->
+                <a class="btn bg-dark shadowed" href="index2.html" target="new" title="html la référence">
+                    <span class="icon-html-five"></span> HTML
+                </a>
+            <li>
+                <a class="btn bg-dark shadowed" href="/index.html#css" target="new" title="CSS la référence">
+                    <span class="icon-css3"></span>CSS
+                </a>
+            </li>
+            
+            <li>
+                <a class="btn bg-dark shadowed" href="https://google.com" target="new" title="follow us">
+                    <span class="icon-google2"></span>Google
+                </a>
+            </li>
+            <!-- Lien de type téléphone /!\ never this way -->
+            <ul id="menu-vertical">
+                <li>
+                    <a href="#" class="btn bg-dark shadowed" title="Contacts">
+                        <span class="icon-menu3"></span>Contact
+                    </a>
+                
+                <ul>
+                    <li>
+                        <a href="#" class="btn bg-dark shadowed" href="tel:0565442010" title="Click to call">
+                            <span class="icon-phone"></span>appelez nous
+                        </a>
+                    </li>
+                    <li>
+                        <!-- Lien de type mail /!\ never this way -->
+                        <a href="#" class="btn bg-dark shadowed content-box"
+                            href="mailto:marcel.dupont@gmail.com?subject=contact us" title="send a email">
+                            <span class="icon-mail"></span>Envoyer un mail
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!--contenu principal d'une page "unique dans un document"-->
+        <section id="section-html2">
+            <header>
+                <h2>Le langage HTML</h2>
+                <img height="100px" src="img/css.png">
+                <p>
+                    Le <strong>langage HTML</strong>
+                    sert à définir le sens des contenus d'une page.
+                    <em>Il n'est en aucun cas responsable de l'enrichissement</em>
+                    de ses contenus.
+                </p>
+            </header>
+            <article>
+                <header>
+                    <h3>Deux familles de balises html</h3>
+                </header>
+                <p>
+                    Les balises blocs definissent un rectangle occupant
+                    la totalité de la largeur disponible dans le navigateur.
+                </p>
+                <footer>
+                    <cite title="w3c.org">
+                        <a href="https://www.w3.org" title="w3c" target="new">
+                            Bloc tags
+                        </a>
+                    </cite>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <h2>Html : web semantique</h2>
+    <footer id="footera">
+        <!-- 
+            Spécification d'une adresse
+            L'utilisation du format vcard est recommandé
+            @see : http://microformats.org/wiki/vcard-fr
+        -->
+        
+        <ul>
+            <li>Nos réseaux sociaux
+            <li>
+                <!--lien externe-->
+                <a class="bg-dark shadowed" href="https://facebook.com" target="new" title="follow us">
+                    <span class="icon-facebook2"></span> Facebook
+                </a>
+            </li>
+            <li>
+                <a class="bg-dark shadowed" href="https://tweeter.com" target="new" title="follow us">
+                    <span class="icon-twitter"></span> Tweeter
+                </a>
+            </li>
+            <li>
+                <a class="bg-dark shadowed" href="https://linkedin.com" target="new" title="follow us">
+                    <span class="icon-linkedin"></span> Linkedin
+                </a>
+            </li>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+<!--fin du document html-->
